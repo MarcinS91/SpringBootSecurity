@@ -4,10 +4,11 @@ import java.util.List;
 
 public interface Users {
 
-	void addUser();
+	void addUser(Users user);
 
-	void deleteUser();
+	void deleteUser(Users user);
 
 	List<Users> getAllUsers();
 
+	Users getUserByUsername(String username);
 }
